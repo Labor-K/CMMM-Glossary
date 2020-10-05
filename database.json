@@ -1,0 +1,58 @@
+{
+  "name": "Critical Mapping",
+  "year": "2000",
+  "category": "CMMM WALL",
+  "Definiton": "Definition text text text",
+  "Author": "Name Lastname",
+  "Reference": "Reference text text",
+  "children": [
+   {
+    "name": "Mapping",
+    "year": "2000",
+    "category": "Shorlarly",
+    "Definiton": "Definition text text text",
+    "Author": "Name Lastname",
+    "Reference": "Reference text text",
+    "children": [
+     {
+      "name": "Mapping",
+      "year": "2000",
+      "category": "Activists",
+      "Definiton": "Definition text text text",
+      "Author": "Name Lastname",
+      "Reference": "Reference text text"
+     },
+     {
+      "name": "Mapping",
+      "year": "2000",
+      "category": "CMMM WALL",
+      "Definiton": "Definition text text text",
+      "Author": "Name Lastname",
+      "Reference": "Reference text text",
+      "children":[
+        {"name": "Unmapping", 
+          "year": "2000",
+          "category": "CMMM WALL",
+          "Definiton": "Definition text text text",
+          "Author": "Name Lastname",
+          "Reference": "Reference text text"}
+       ]
+     }
+    ]
+   },
+   {
+    "name": "Housing",
+    "year": "2000",
+    "category": "CMMM WALL",
+    "Definiton": "Definition text text text",
+    "Author": "Name Lastname",
+    "Reference": "Reference text text",
+    "children": [
+     {
+      "name": "Level 2"
+     },
+     {"name": "Level 2"}
+    ]
+   }
+  ]
+ }
