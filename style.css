@@ -96,3 +96,9 @@ body {
     bottom: 40vh;
     background-color: grey;
   }
+
+  .selected {
+    fill: red;
+    text-decoration: underline;
+
+}

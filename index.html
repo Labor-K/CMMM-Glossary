@@ -39,11 +39,10 @@
   <div id="definitions"></div>
   <div id="filters">
     <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
       <button class="btn-cmmm"> CMMM Wall</button>
-      <button class="btn" onclick="filterSelection('Activists')"> Activists/Media</button>
-      <button class="btn" onclick="filterSelection('Sholarly')"> Scholarly</button>
-      <button class="btn" onclick="filterSelection('Institutional')"> Institutional</button>
+      <button class="btn-act" > Activists/Media</button>
+      <button class="btn-scho" > Scholarly</button>
+      <button class="btn-inst" > Institutional</button>
     </div>
   </div>
 
@@ -284,7 +283,7 @@
         .on("click", click)
         .call(force.drag);
 
-      nodeEnter.append("circle").attr("r", 15).style("fill", "ffffff").style("opacity", 0.1);
+      nodeEnter.append("circle").attr("r", 15).style("fill", "white").style("opacity", 0.01);
 
       nodeEnter
         .append("text")
@@ -293,7 +292,8 @@
 
         .html(function (d) {
           return d.name;
-        });
+        })        
+;
 
       // Transition nodes to their new position.
       var nodeUpdate = node.transition().duration(duration);
@@ -346,6 +346,10 @@
       // Content
 
       node.on("click", function (d) {
+
+          d3.select(".selected").classed("selected", false);
+          d3.select(this).classed("selected", true);
+
         d3.selectAll("#def").remove();
         d3.select("#definitions")
           .append("div")
@@ -364,6 +368,9 @@
           .html(d.Definiton_b + "<br>" + d.year_b + "</b>");
       });
 
+
+            
+
 var button = d3.select(".btn-cmmm")
 button.on("click",function(d){
   d3.selectAll(".CMMMWALL").remove();
@@ -378,9 +385,6 @@ button.on("click",function(d){
         d.y0 = d.y;
       });
     }
-
-
-
     
   </script>
 </body>
