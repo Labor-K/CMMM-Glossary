@@ -1,75 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8" />
-<style>
 
-  body {
-    font-family: 'Barlow', sans-serif;
-
-  }
-  .node {
-    cursor: pointer;
-  }
-
-  .node circle {
-    fill: black;
-    stroke: white;
-    stroke-width: 3px;
-  }
-
-  .node text {
-    font-family: 'Barlow', sans-serif;
-    font: 14px;
-  }
-
-  .link {
-    fill: none;
-    stroke: #ccc;
-    stroke-width: 1px;
-  }
-
-  .found {
-    fill:none;
-    /* fill: #fa0f0c; */
-    stroke: #fa0f0c;
-  }
-
-  .search {
-    float: left;
-    font-family: 'Barlow', sans-serif;
-    font: 14px;
-    width: 30%;
-  }
-
-  ul.select2-results {
-    max-height: 100px;
-  }
-
-  .select2-container,
-  .select2-drop,
-  .select2-search,
-  .select2-search input {
-    font-family: 'Barlow', sans-serif;
-    font: 15px;
-  }
-
-  #block_container {
-    display: inline;
-  }
-
-  #CMMMWALL {
-    width: 100px;
-    height: 100px;
-  }
-
-  #Shorlarly {
-    width: 100px;
-    height: 100px;
-  }
-  #Activists {
-    width: 100px;
-    height: 100px;
-  }
-</style>
 <body>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -82,15 +13,53 @@
     type="text/css"
     href="http://cdnjs.cloudflare.com/ajax/libs/select2/3.5.2/select2.min.css"
   />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="style.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
 
 
+
+
+
+
+
+
+
+  
+  <div id="graph"></div>
   <div id="block_container">
     <div id="searchName"></div>
   </div>
+  <div id="definitions"></div>
+  <div id="filters">
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('CMMMWALL')"> CMMM Wall</button>
+      <button class="btn" onclick="filterSelection('Activists')"> Activists/Media</button>
+      <button class="btn" onclick="filterSelection('Sholarly')"> Scholarly</button>
+      <button class="btn" onclick="filterSelection('Institutional')"> Institutional</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
   <script>
-
     //SEARCH FUNCTIONALITY
     //===============================================
     function select2DataCollectName(d) {
@@ -220,20 +189,20 @@
     //GRAPH ARCHITECTURE
     //===============================================
     var width = 960,
-      height = 500,
+      height = 600,
       duration = 0,
       root;
 
     var force = d3.layout
       .force()
-      .linkDistance(100)
-      .charge(-2000)
+      .linkDistance(15)
+      .charge(-1000)
       .gravity(0.1)
-      .size([width, height])
+      .size([width - 10, height + 50])
       .on("tick", tick);
 
     var svg = d3
-      .select("body")
+      .select("#graph")
       .append("svg")
       .attr("width", width)
       .attr("height", height);
@@ -315,11 +284,11 @@
         .on("click", click)
         .call(force.drag);
 
-      nodeEnter.append("circle").attr("r", 15).style("fill", "#ffffff");
+      nodeEnter.append("circle").attr("r", 15).style("fill", "ffffff").style("opacity", 0.1);
 
       nodeEnter
         .append("text")
-        .attr("dy", "0em")
+        .attr("dy", "0.5em")
         .attr("dx", "0em")
 
         .html(function (d) {
@@ -341,7 +310,7 @@
         //     return "#fff";
         //   }
         // })
-        .style("stroke", function (d) {
+        .style("fill", function (d) {
           if (d.class === "found") {
             return "#fa0f0c"; //red
           }
@@ -374,18 +343,26 @@
           }
         });
 
-
-        // Content 
+      // Content
 
       node.on("click", function (d) {
-        d3.select("body")
+        d3.selectAll("#def").remove();
+        d3.select("#definitions")
           .append("div")
-          .attr("id", d.category.replace(/\s+/g, ""))
+          .attr("id", "def")
+          .attr("class", "filterDiv " + d.category.replace(/\s+/g, ""))
           .html(d.Definiton + "<br>" + d.year + "</b>");
-        d3.select("body")
+          console.log("filterDiv " + d.category.replace(/\s+/g, ""));
+        d3.select("#definitions")
           .append("div")
-          .attr("id", d.category_a.replace(/\s+/g, ""))
+          .attr("id", "def")
+          .attr("class", "filterDiv " + d.category.replace(/\s+/g, ""))
           .html(d.Definiton_a + "<br>" + d.year_a + "</b>");
+        d3.select("#definitions")
+          .append("div")
+          .attr("id", "def")
+          .attr("class", "filterDiv " + d.category.replace(/\s+/g, ""))
+          .html(d.Definiton_b + "<br>" + d.year_b + "</b>");
       });
 
       // Transition exiting nodes to the parent's new position.
@@ -397,5 +374,51 @@
         d.y0 = d.y;
       });
     }
+
+
+
+    //Filter Functionality
+    filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
   </script>
 </body>
