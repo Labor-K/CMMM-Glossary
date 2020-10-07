@@ -1,5 +1,5 @@
 {
-  "name": "Critical Mapping",
+  "name": "Housing",
   "year": "2000",
   "category": "CMMM WALL",
   "Definiton": "Definition text text text",
@@ -7,18 +7,33 @@
   "Reference": "Reference text text",
   "children": [
    {
-    "name": "Mapping",
+    "name": "Testbutton",
     "year": "2000",
-    "category": "Shorlarly",
-    "Definiton": "Definition text text text",
+    "category": "CMMM WALL",
+    "Definiton": "Definition of placeholdertext",
     "Author": "Name Lastname",
     "Reference": "Reference text text",
+    "name_b": "Mapping",
+    "year_b": "2000",
+    "category_b": "Activists",
+    "Definiton_b": "Definition_b This is a placeholder text",
+    "Author_b": "Name_a Lastname",
+    "Reference_b": "Reference text text_a",
+    "name_a": "Mapping",
+    "year_a": "2000",
+    "category_a": "Shorlarly",
+    "Definiton_a": "Definition_a placeholding text is here.",
+    "Author_a": "Name_a Lastname",
+    "Reference_a": "Reference text text_a",
+
+
+
     "children": [
      {
       "name": "Mapping",
       "year": "2000",
       "category": "Activists",
-      "Definiton": "Definition text text text",
+      "Definiton": "What a great Definition text ! ",
       "Author": "Name Lastname",
       "Reference": "Reference text text"
      },
@@ -26,7 +41,7 @@
       "name": "Mapping",
       "year": "2000",
       "category": "CMMM WALL",
-      "Definiton": "Definition text text text",
+      "Definiton": "This is a Definition text text text",
       "Author": "Name Lastname",
       "Reference": "Reference text text",
       "children":[
@@ -53,6 +68,78 @@
      },
      {"name": "Level 2"}
     ]
+   },
+   {
+    "name": "Critical Mapping",
+    "year": "2000",
+    "category": "CMMM WALL",
+    "Definiton": "Definition text text text",
+    "Author": "Name Lastname",
+    "Reference": "Reference text text",
+    "children": [
+     {
+      "name": "Mapping",
+      "year": "2000",
+      "category": "Shorlarly",
+      "Definiton": "Definition of Definition after Definition",
+      "Author": "Name Lastname",
+      "Reference": "Reference text text",
+      "name_a": "Mapping",
+      "year_a": "2000",
+      "category_a": "Shorlarly",
+      "Definiton_a": "Definition_a of Definition after Definition",
+      "Author_a": "Name_a Lastname",
+      "Reference_a": "Reference text text_a",
+  
+  
+  
+  
+      "children": [
+       {
+        "name": "Mapping",
+        "year": "2000",
+        "category": "Activists",
+        "Definiton": "What a great Definition text ! ",
+        "Author": "Name Lastname",
+        "Reference": "Reference text text"
+       },
+       {
+        "name": "Mapping",
+        "year": "2000",
+        "category": "CMMM WALL",
+        "Definiton": "This is a Definition text text text",
+        "Author": "Name Lastname",
+        "Reference": "Reference text text",
+        "children":[
+          {"name": "Unmapping", 
+            "year": "2000",
+            "category": "CMMM WALL",
+            "Definiton": "Definition text text text",
+            "Author": "Name Lastname",
+            "Reference": "Reference text text"}
+         ]
+       }
+      ]
+     },
+     {
+      "name": "Housing",
+      "year": "2000",
+      "category": "CMMM WALL",
+      "Definiton": "Definition text text text",
+      "Author": "Name Lastname",
+      "Reference": "Reference text text",
+      "children": [
+       {
+        "name": "Level 2"
+       },
+       {"name": "Level 2"}
+      ]
+     }
+    ]
    }
   ]
+  
  }
+
+
+ 
