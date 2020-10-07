@@ -1,0 +1,98 @@
+body {
+    font-family: "Barlow", sans-serif;
+    display: inline-block;
+  }
+  .node {
+    cursor: pointer;
+  }
+
+  .node circle {
+    fill: black;
+    stroke: white;
+    stroke-width: 3px;
+  }
+
+  .node text {
+    font-family: "Barlow", sans-serif;
+    font: 14px;
+  }
+
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1px;
+  }
+
+  .found {
+    fill: none;
+    /* fill: #fa0f0c; */
+    stroke: #fa0f0c;
+  }
+
+  .search {
+    float: left;
+    font-family: "Barlow", sans-serif;
+    font: 14px;
+    width: 30%;
+  }
+
+  ul.select2-results {
+    max-height: 100px;
+  }
+
+  .select2-container,
+  .select2-drop,
+  .select2-search,
+  .select2-search input {
+    font-family: "Barlow", sans-serif;
+    font: 15px;
+  }
+
+  #block_container {
+    position: fixed;
+    width: 100%;
+  }
+
+  #def {
+    float: none;
+    display: inline-block;
+  }
+
+
+  .CMMMWALL,
+  .Shorlarly,
+  .Activists {
+    float: none;
+    display: inline-block;
+    width: 400px;
+    height: 40vh;
+    background-color: white;
+    margin-right: 0.25em;
+    display: none;
+  }
+
+
+  #definitions {
+    width: 100vw;
+    height: 40vh;
+    background-color: orange;
+    position: fixed;
+    bottom: 0;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  #graph {
+    position: fixed;
+    width: 100vw;
+    height: 60vh;
+    background-color: white;
+  }
+
+  #filters {
+    position: fixed;
+    height: 4vh;
+    width: 100vw;
+    bottom: 40vh;
+    background-color: grey;
+  }
