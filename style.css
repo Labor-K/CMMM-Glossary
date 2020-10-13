@@ -2,10 +2,18 @@ body {
     font-family: "Barlow", sans-serif;
     display: inline-block;
   }
+
+
+  h1{
+
+    margin:0;
+  }
   .node {
     cursor: pointer;
   }
-
+p{
+  width: 200px;
+}
   .node circle {
     fill: black;
     stroke: white;
@@ -56,12 +64,13 @@ body {
   #def {
     float: none;
     display: inline-block;
+    border-right: 2px solid black;
   }
 
 
   .CMMMWALL,
-  .Shorlarly,
-  .Activists {
+  .SCHOLARLY,
+  .ACTIVISTS\/MEDIA {
     float: none;
     display: inline-block;
     width: 400px;
@@ -69,17 +78,39 @@ body {
     background-color: white;
     margin-right: 0.25em;
     display: none;
+    overflow-y: auto;
+    white-space: pre-wrap;
   }
 
+
+/*   Color of Tags in Textbox */
+
+
+#SCHOLARLYsp{
+  background-color: red;
+}
+
+#CMMMWALLsp{
+  background-color: orange;
+}
+
+#ACTIVISTS\/MEDIAsp{
+  background-color: blue;
+}
+
+#Institutionalsp{
+  background-color: green;
+}
 
   #definitions {
     width: 100vw;
     height: 40vh;
-    background-color: orange;
+    background-color: white;
     position: fixed;
     bottom: 0;
     overflow: auto;
     white-space: nowrap;
+
   }
 
   #graph {
@@ -94,7 +125,7 @@ body {
     height: 4vh;
     width: 100vw;
     bottom: 40vh;
-    background-color: grey;
+    background-color:#FAFAFA;
   }
 
   .selected {
@@ -102,3 +133,12 @@ body {
     text-decoration: underline;
 
 }
+
+#year{
+  font-weight: 200;
+}
+
+.btn-cmmm{background-color: orange; border: none;}
+.btn-act{background-color: blue; border: none;}
+.btn-scho{background-color: red; border: none;}
+.btn-inst {background-color: green; border: none;}

@@ -34,11 +34,14 @@
   
   <div id="graph"></div>
   <div id="block_container">
-    <div id="searchName"></div>
+    
+    <h1>CMMM—Glossary</h1>
+    <p>Search:</p>
+    <div id="searchName" aria-label="hello"></div>
   </div>
   <div id="definitions"></div>
-  <div id="filters">
-    <div id="myBtnContainer">
+  <div id="filters"> 
+    <div id="myBtnContainer">Filter by Source: 
       <button class="btn-cmmm"> CMMM Wall</button>
       <button class="btn-act" > Activists/Media</button>
       <button class="btn-scho" > Scholarly</button>
@@ -194,10 +197,10 @@
 
     var force = d3.layout
       .force()
-      .linkDistance(15)
-      .charge(-1000)
+      .linkDistance(25)
+      .charge(-400)
       .gravity(0.1)
-      .size([width - 10, height + 50])
+      .size([width  + 220, height - 250])
       .on("tick", tick);
 
     var svg = d3
@@ -267,6 +270,7 @@
     function update() {
       var nodes = flatten(root),
         links = d3.layout.tree().links(nodes);
+        console.log(root)
 
       // Restart the force layout.
       force.nodes(nodes).links(links).start();
@@ -292,8 +296,7 @@
 
         .html(function (d) {
           return d.name;
-        })        
-;
+        });
 
       // Transition nodes to their new position.
       var nodeUpdate = node.transition().duration(duration);
@@ -349,23 +352,65 @@
 
           d3.select(".selected").classed("selected", false);
           d3.select(this).classed("selected", true);
-
-        d3.selectAll("#def").remove();
-        d3.select("#definitions")
+          d3.selectAll("#def").remove();
+          d3.select("#definitions")
           .append("div")
           .attr("id", "def")
           .attr("class", d.category.replace(/\s+/g, ""))
-          .html(d.Definiton + "<br>" + d.year + "</b>");
-        d3.select("#definitions")
+          .html('<h2>' + d.name + ", " + '<span id="year">' + d.year + '</span>' + '</h2>' + 
+          '<span id='+d.category.replace(/\s+/g, "")+"sp"+'>' + d.category + '</span>' +
+          '<p>' + d.Definiton +'</p>' +
+          '<p><b><em>' + "by: " + d.Author + '</em></b></p>'+
+          '<p><em>' + d.Reference +'<p><em>'
+          );
+
+          
+          d3.select("#definitions")
           .append("div")
           .attr("id", "def")
           .attr("class", d.category_a.replace(/\s+/g, ""))
-          .html(d.Definiton_a + "<br>" + d.year_a + "</b>");
-        d3.select("#definitions")
+          .html('<h2>' + d.name_a + ", " + '<span id="year">' + d.year_a + '</span>' + '</h2>' + 
+          '<span id='+d.category_a.replace(/\s+/g, "")+"sp"+'>' + d.category_a + '</span>' +
+          '<p>' + d.Definiton_a +'</p>' +
+          '<p><b><em>' + "by: " + d.Author_a + '</em></b></p>'+
+          '<p><em>' + d.Reference_a +'<p><em>'
+          );
+
+        
+
+          d3.select("#definitions")
           .append("div")
           .attr("id", "def")
-          .attr("class", d.category_b.replace(/\s+/g, ""))
-          .html(d.Definiton_b + "<br>" + d.year_b + "</b>");
+          .attr("class", d.category_c.replace(/\s+/g, ""))
+          .html('<h2>' + d.name_c + ", " + '<span id="year">' + d.year_c + '</span>' + '</h2>' + 
+          '<span id='+d.category_c.replace(/\s+/g, "")+"sp"+'>' + d.category_c + '</span>' +
+          '<p>' + d.Definiton_c +'</p>' +
+          '<p><b><em>' + "by: " + d.Author_c + '</em></b></p>'+
+          '<p><em>' + d.Reference_c +'<p><em>'
+          );
+
+          d3.select("#definitions")
+          .append("div")
+          .attr("id", "def")
+          .attr("class", d.category_d.replace(/\s+/g, ""))
+          .html('<h2>' + d.name_d + ", " + '<span id="year">' + d.year_d + '</span>' + '</h2>' + 
+          '<span id='+d.category_d.replace(/\s+/g, "")+"sp"+'>' + d.category_d + '</span>' +
+          '<p>' + d.Definiton_d +'</p>' +
+          '<p><b><em>' + "by: " + d.Author_d + '</em></b></p>'+
+          '<p><em>' + d.Reference_d +'<p><em>'
+          );
+
+          d3.select("#definitions")
+          .append("div")
+          .attr("id", "def")
+          .attr("class", d.category_f.replace(/\s+/g, ""))
+          .html('<h2>' + d.name_f + ", " + '<span id="year">' + d.year_f + '</span>' + '</h2>' + 
+          '<span id='+d.category_f.replace(/\s+/g, "")+"sp"+'>' + d.category_f + '</span>' +
+          '<p>' + d.Definiton_f +'</p>' +
+          '<p><b><em>' + "by: " + d.Author_f + '</em></b></p>'+
+          '<p><em>' + d.Reference_f +'<p><em>'
+          );
+
       });
 
 
@@ -374,6 +419,21 @@
 var button = d3.select(".btn-cmmm")
 button.on("click",function(d){
   d3.selectAll(".CMMMWALL").remove();
+});
+
+var buttona = d3.select(".btn-act")
+buttona.on("click",function(d){
+  d3.selectAll(".Activists").remove();
+});
+
+var buttonb = d3.select(".btn-scho")
+buttonb.on("click",function(d){
+  d3.selectAll(".SCHOLARLY").remove();
+});
+
+var buttonc = d3.select(".btn-inst")
+buttonc.on("click",function(d){
+  d3.selectAll(".Institutional").remove();
 });
 
       // Transition exiting nodes to the parent's new position.
