@@ -12,7 +12,7 @@ body {
     cursor: pointer;
   }
 p{
-  width: 200px;
+  width: 300px;
 }
   .node circle {
     fill: black;
@@ -20,9 +20,9 @@ p{
     stroke-width: 3px;
   }
 
-  .node text {
+  .node{
     font-family: "Barlow", sans-serif;
-    font: 14px;
+    font-size: 9px;
   }
 
   .link {
@@ -41,11 +41,14 @@ p{
     float: left;
     font-family: "Barlow", sans-serif;
     font: 14px;
-    width: 30%;
+    width:200px;
+
   }
 
   ul.select2-results {
     max-height: 100px;
+    width:200px;
+
   }
 
   .select2-container,
@@ -54,11 +57,12 @@ p{
   .select2-search input {
     font-family: "Barlow", sans-serif;
     font: 15px;
+    width:200px;
   }
 
   #block_container {
     position: fixed;
-    width: 100%;
+    width: 20%;
   }
 
   #def {
@@ -70,7 +74,8 @@ p{
 
   .CMMMWALL,
   .SCHOLARLY,
-  .ACTIVISTS\/MEDIA {
+  .ACTIVISTS\/MEDIA,
+  .INSTITUTIONAL {
     float: none;
     display: inline-block;
     width: 400px;
@@ -80,6 +85,7 @@ p{
     display: none;
     overflow-y: auto;
     white-space: pre-wrap;
+    margin-left:50px;
   }
 
 
@@ -98,7 +104,7 @@ p{
   background-color: blue;
 }
 
-#Institutionalsp{
+#INSTITUTIONALsp{
   background-color: green;
 }
 
@@ -142,3 +148,8 @@ p{
 .btn-act{background-color: blue; border: none;}
 .btn-scho{background-color: red; border: none;}
 .btn-inst {background-color: green; border: none;}
+
+
+svg {
+  z-index: 99999;
+}

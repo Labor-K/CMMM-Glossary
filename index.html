@@ -197,8 +197,8 @@
 
     var force = d3.layout
       .force()
-      .linkDistance(25)
-      .charge(-400)
+      .linkDistance(5)
+      .charge(-500)
       .gravity(0.1)
       .size([width  + 220, height - 250])
       .on("tick", tick);
@@ -376,6 +376,16 @@
           '<p><em>' + d.Reference_a +'<p><em>'
           );
 
+          d3.select("#definitions")
+          .append("div")
+          .attr("id", "def")
+          .attr("class", d.category_b.replace(/\s+/g, ""))
+          .html('<h2>' + d.name_b + ", " + '<span id="year">' + d.year_b + '</span>' + '</h2>' + 
+          '<span id='+d.category_b.replace(/\s+/g, "")+"sp"+'>' + d.category_b + '</span>' +
+          '<p>' + d.Definiton_a +'</p>' +
+          '<p><b><em>' + "by: " + d.Author_b + '</em></b></p>'+
+          '<p><em>' + d.Reference_b +'<p><em>'
+          );
         
 
           d3.select("#definitions")
@@ -433,7 +443,7 @@ buttonb.on("click",function(d){
 
 var buttonc = d3.select(".btn-inst")
 buttonc.on("click",function(d){
-  d3.selectAll(".Institutional").remove();
+  d3.selectAll(".INSTITUTIONAL").remove();
 });
 
       // Transition exiting nodes to the parent's new position.
