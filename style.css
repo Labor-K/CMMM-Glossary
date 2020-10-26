@@ -91,6 +91,10 @@ p{
 
 /*   Color of Tags in Textbox */
 
+#big{
+  font-size: 15px;
+  font-weight: bold;
+}
 
 #SCHOLARLYsp{
   background-color: red;
@@ -135,8 +139,9 @@ p{
   }
 
   .selected {
-    fill: red;
+    fill: black;
     text-decoration: underline;
+    font-weight: 700;
 
 }
 
