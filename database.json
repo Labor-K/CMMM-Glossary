@@ -1,5 +1,6 @@
 {
   "name": "Critical Mapping",
+  "style": "bold",
   "year": 2018,
   "category": "CMMM WALL",
   "Definiton": "\"We use the term Critical Mapping as an engaged act of pursuing critical cartography, reflecting power relations (i.e. the interests of dominant groups) while suggesting alternative readings, hopes and desires of others.\"",
@@ -196,6 +197,7 @@
      },
      {
       "name": "Housing",
+      "style": "bold",
       "year": 2020,
       "category": "SCHOLARLY",
       "Definiton": "(within the context of social reproduction) \"The crisis of social reproduction and the politics of care are inextricably linked to housing. The home is a strategic site for social reproduction: it’s where social reproductive labor happens—not exclusively, but to a significant extent. When housing is overcrowded, poorly maintained, or otherwise inadequate, social reproductive processes are placed under strain. Care requires space, and sufficient domestic space is increasingly hard to come by.\"",
@@ -426,6 +428,7 @@
    },
    {
     "name": "Municipalism Movements",
+    "style": "bold",
     "year": "No data",
     "category": "No data",
     "Definiton": "No data",
