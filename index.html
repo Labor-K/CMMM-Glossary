@@ -197,8 +197,8 @@
 
     var force = d3.layout
       .force()
-      .linkDistance(10)
-      .charge(-500)
+      .linkDistance(15)
+      .charge(-800)
       .gravity(0.1)
       .size([width  + 220, height - 250])
       .on("tick", tick);
@@ -208,9 +208,7 @@
       .append("svg")
       .attr("width", "100%")
       .attr("height", "100%")
-      .call(d3.behavior.zoom().on("zoom", function () {
-    svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
-  }))
+
       
 
     var link = svg.selectAll(".link"),
@@ -301,11 +299,17 @@
         .html(function (d) {
           return d.name;
         })
+
         .attr("id", function (d) {
           if (d.style === "bold") {
-            console.log(d.style === "bold");
             return "big"; //red
-          }
+          } else if (d.style === "medium") {
+            return "medium"; //red
+          } else if (d.style === "small") {
+            return "small"; //red
+          } 
+
+
         });
 
       // Transition nodes to their new position.

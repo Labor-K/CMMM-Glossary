@@ -15,6 +15,7 @@
   "children": [
      {
         "name": "Mapping",
+        "style": "medium",
         "year": 1971,
         "category": "SCHOLARLY",
         "Definiton": "\" [Mapping is] the process of making a map of an area; the process of discovering or giving information about something, especially the way it is arranged or organized\"",
@@ -53,6 +54,7 @@
         "children": [
            {
               "name": "Unmapping",
+              "style": "small",
               "year": 2003,
               "category": "SCHOLARLY",
               "Definiton": "\"[Unmapping is] a specific regulatory logic that operated precisely through the absence of knowable maps and records.\"\n \"... [F]orms of deregulation and unmapping, that is, informality, allow the state considerable territorialized flexibility to alter land use, deploy eminent domain, and to acquire land.\"",
@@ -67,6 +69,7 @@
            },
            {
               "name": "Maps",
+              "style": "small",
               "year": 1987,
               "category": "SCHOLARLY",
               "Definiton": "\"... maps are graphic representations that facilitate a spatial understanding of things, concepts, conditions, processes, or events in the human world.\"",
@@ -81,6 +84,7 @@
            },
            {
               "name": "Topography",
+              "style": "small",
               "year": 1971,
               "category": "SCHOLARLY",
               "Definiton": "\"[Topography is] the physical features of an area of land, especially the position of its rivers, mountains, etc.; the study of these features\"",
@@ -95,6 +99,7 @@
            },
            {
               "name": "Community Mapping",
+              "style": "small",
               "year": 2006,
               "category": "INSTITUTIONAL ",
               "Definiton": "\"Community maps often represent a socially or culturally distinct understanding of landscape and include information that is excluded from mainstream maps, which usually represent the views of the dominant sectors of society. This style of map can therefore pose alternatives to the languages and images of the existing power structures. Community maps often differ considerably from mainstream maps in content, appearance and methodology. Indicators used to recognise and denote community maps include the following:\n• Community mapping is defined by the process of production. \n• Community maps are planned around a consensus based goal and strategy for use and made with input from a community in an open and inclusive process. \n• Community mapping is defined by the content of the maps, which depict local knowledge and information and are often aimed at addressing local issues. They contain the community’s place names, symbols, and priority features and represent local knowledge systems.\n• Community mapping is not necessarily defined by the level of compliance with formal cartographic conventions. Nor are they confined by formal media: a community map may be a part of a GIS or a drawing in the sand.\"",
@@ -103,6 +108,7 @@
            },
            {
               "name": "Participatory Mapping",
+              "style": "small",
               "year": 2009,
               "category": "INSTITUTIONAL ",
               "Definiton": "\"Participatory mapping is, in its broadest sense, the creation of maps by local communities – often with the involvement of supporting organizations including governments (at various levels), non-governmental organizations (NGOs), universities and other actors engaged in development and land-related planning. ... Participatory mapping is multidisciplinary. What makes it significantly different from traditional cartography and map-making is the process by which the maps are created and the uses to which they are subsequently put. Participatory mapping focuses on providing the skills and expertise for community members to create the maps themselves, to represent the spatial knowledge of community members and to ensure that community members determine the ownership of the maps and how and to whom to communicate the information that the maps provide. The participatory mapping process can influence the internal dynamics of a community. This process can contribute to building community cohesion, help stimulate community members to engage inland-related decision-making, raise awareness about pressing land-related issues and ultimately contribute to empowering local communities and their members.\"",
@@ -119,6 +125,7 @@
      },
      {
         "name": "Radical Cartography",
+        "style": "medium",
         "year": 2019,
         "category": "ACTIVISTS / MEDIA",
         "Definiton": "\"Radical cartography, or critical cartography, is to use the map as a very brutal tool to make the world know some things which are totally inacceptable. Radical Cartography is very simple. First: Deconstruction. Second: Action on the field. Phase 1: Deconstruction. Understanding how the things are organised. Trying to deconstruct the system and decribe it. ... Phase 2 is an action on the field that leeds to oblige the state or the power, let us call it the power, to go reverse. To go backwards, to renounce to their project.\"",
@@ -133,6 +140,7 @@
      },
      {
         "name": "Countermapping",
+        "style": "medium",
         "year": 2018,
         "category": "SCHOLARLY",
         "Definiton": "\"Countermapping is for us a political act and one that (we insist) should also be accompanied by political action. By countermapping, we refer to a set of critical cartographic and feminist data visualization practices that seek to render visible the landscapes, lives, and sites of resistance and dispossession elided in capitalist, colonial, and liberal topographies. Methodologically, countermapping questions how, why, and with whom maps are made.\" ",
@@ -141,6 +149,7 @@
      },
      {
         "name": "Counter-cartography",
+        "style": "medium",
         "year": 2018,
         "category": "SCHOLARLY",
         "Definiton": "\"... counter-cartographies are understood as maps that break with the scientific tradition and specialization of cartography as well as with its mere technical or essentially positivist view of the world. This type of transgression goes against official geopolitical maps while exposing relations of domination over and exploitation of a territory as well as revealing concealed networks of power. With an anti-capitalist orientation, one of the aims of counter-maps is to make obscure and established powers more perceptible in order to confront them. Counter-cartographies can be used in a tactical manner over the duration of an action and in a strategical manner for analyzing networks and spaces in order to generate social change from below. Another task is to deconstruct the political and economic logics of mechanisms, organizations and social hierarchies so as to reveal its contradictions.\"",
@@ -155,6 +164,7 @@
      },
      {
         "name": "Critical Cartography",
+        "style": "medium",
         "year": 2005,
         "category": "SCHOLARLY",
         "Definiton": "\"We define critical cartography as a one-two punch of new mapping practices and theoretical critique. Critical cartography challenges academic cartography by linking geographic knowledge with power, and thus is political. ... these two trends resist and challenge the received method and practice of mapping established when cartography became an academic discipline.\"",
@@ -175,6 +185,7 @@
      },
      {
         "name": "Tactical Mapping",
+        "style": "medium",
         "year": 2018,
         "category": "SCHOLARLY",
         "Definiton": "\"Tactical mapping remakes the lineage of radical cartography through the use of contemporary digital technologies such as global positioning systems on smartphones, cameras, Bluetooth devices, and handheld receivers (GPS); geographical information systems that query, index, and map large quantities of data in a single database (GIS); imagery obtained over decades by networks of government, military, and private remote sensing satellites; application programming interfaces (APIs) constructed by such sites as Google Earth, HyperCities, OpenStreetMap, and Harvard World Mapi; and, not least, an array of gaming platforms in wide circulation. The Institute for Applied Autonomy ... identifies tactical mapping´s target as the authoritarian structures that oversee all levels of contemporary life. “In taking up the term ´tactical´ in an arts context,” they write, “we link cartography with ´tactical media´ ... [and] claim that ´tactical cartography´ refers to the creation, distribution, and use of spatial data to intervene in systems of control affecting spatial meaning and practice.”\"",
@@ -189,6 +200,7 @@
      },
      {
         "name": "Feminist Data Visualisation",
+        "style": "medium",
         "year": 2016,
         "category": "SCHOLARLY",
         "Definiton": "\"[A] feminist approach to data visualization, while centered on design, insists that data, design, and community of use, are inextricably intertwined. ... In this paper, we have outlined six principles for feminist data visualization: Rethink Binaries, Embrace Pluralism, Examine Power and Aspire to Empowerment, Consider Context, Legitimize Embodiment and Affect and Make Labor Visible. These are preliminary and offered for the purposes of beginning a dialogue about how the digital humanities and information visualization communities can productively exchange theories, concepts, and methods. Applying humanistic theories to design processes and artifacts may be new territory for many humanists, just as grappling with questions of subjectivity, power, and oppression may be new territory for many visualization researchers.\"",
@@ -206,6 +218,7 @@
       "children": [
          {
             "name": "Right to Adequate Housing",
+            "style": "medium",
             "year": 2018,
             "category": "SCHOLARLY",
             "Definiton": "\"The right to adequate housing includes both freedoms - from forcible eviction, from interference in home and privacy, and to choose where to live and move - as well as entitlements - to secure, tenure, restitution, equal access, and participation in housing-related decisions. In order to be considered \"adequate\" housing must be affordable, habitable, available, accessible, connected to services and infrastructure, and culturally appropriete.\"",
@@ -226,6 +239,7 @@
             "children": [
                {
                   "name": "Severe Rental Housing Cost Burden",
+                  "style": "small",
                   "year": 2018,
                   "category": "SCHOLARLY",
                   "Definiton": "\"A severe rental housing cost burden [means] having rental housing costs higher than 50 percent of a renter's income [which] might also potentially result in eviction and eventual homelessness.\"",
@@ -234,6 +248,7 @@
                },
                {
                   "name": "Moderate Rental Housing Cost Burden",
+                  "style": "small",
                   "year": 2018,
                   "category": "SCHOLARLY",
                   "Definiton": "\"A moderate rental housing cost burden [means] having rental housing cost higher than 30 percent of a renter's pretax (Schwartz, 2015) or adjusted (Pelletiere, 2008) income [which] might result in overcrowding, doubling up, or difficulties meeting expenses related to food, transportation, education, and health care, among other expenses, or saving for retirement.\"",
@@ -242,6 +257,7 @@
                },
                {
                   "name": "Housing Cost-burdened Household",
+                  "style": "small",
                   "year": 2020,
                   "category": "INSTITUTIONAL ",
                   "Definiton": "\"A household is considered housing cost-burdened when 30 percent or more of its monthly gross income is dedicated to housing. People whose housing costs exceed this threshold of affordability are likely to struggle to pay for other basic needs, forcing difficult trade-offs. Individuals and families who are cost-burdened may drop health care coverage, select less expensive child care arrangements, or skip meals to save on costs, which may result in poorer outcomes in other areas of well-being.\"",
@@ -250,6 +266,7 @@
                },
                {
                   "name": "Precarious Housing",
+                  "style": "small",
                   "year": 2020,
                   "category": "CMMM WALL",
                   "Definiton": "\"Precarious housing includes every situation of housing which does not fulfil et least one the three following criteria: affordability (referring to the housing related costs, in relation to the income); adeqacy (referring to physical conditions of the housing unit); security (referring to the (in)certainty of tenure).\" ",
@@ -258,6 +275,7 @@
                },
                {
                   "name": "Affordable Housing",
+                  "style": "small",
                   "year": 2019,
                   "category": "INSTITUTIONAL ",
                   "Definiton": "\"Housing affordability can be measured in different ways. Indicators often focus on the ratio between housing costs and household income. Two common indicators are: i) the housing cost burden ..., which is the share of households spending more than 40% of their disposable household income on rent or mortgage; and ii) the share of housing-related expenditures (housing, water, electricity, gas, etc.) relative to overall final consumption expenditures of a household. Other indicators may aim to measure other dimensions of housing affordability, such as the share of households who cannot afford to keep their dwelling adequately warm.\"",
@@ -266,6 +284,7 @@
                },
                {
                   "name": "Adequate Housing ",
+                  "style": "small",
                   "year": 2016,
                   "category": "INSTITUTIONAL ",
                   "Definiton": "\"Adequate housing is the one that fulfils the minimal standard conditions in terms of spatial conditions [number of m2 per person], equipment with basic installations, construction safety, as well as protection from the external influences and fulfilment of basic hygiene-related conditions.\"",
@@ -280,6 +299,7 @@
                },
                {
                   "name": "Illegitimate Housing Debt",
+                  "style": "small",
                   "year": 2019,
                   "category": "INSTITUTIONAL ",
                   "Definiton": "\"Illigitimate debt is a political concept. It covers legal principles such as: the prohibition of abuse, equity, human dignity, the right of people to self-determination. ... We are using the following definition, which the Committee for the Abolition of Illegitimate Dect (CADTM) developed: illegitimate debt is 'the debt that the borrower cannot be required to repay because the loan, security of guarantee, or the terms and conditions attached to that loan, security of guarantee infringed the law (both national and international) or public policy, or becuase such terms or conditions were grossly unfair, unreasoinable, unconscionable or otherwise objectionable, or because the conditions attached to this loan, securty or guarantee included policy prescriptions that violate national laws or human rights standards, or because the loan, securty or guarantee was not used for the benefit of the population or the debt was converted from private (commercial) to public debt under the pressure frmo bailout creditors.\" ",
@@ -288,6 +308,7 @@
                },
                {
                   "name": "Officially Protected Housing (VPO)",
+                  "style": "small",
                   "year": 2020,
                   "category": "CMMM WALL",
                   "Definiton": "\"Public or private housing (it can be built by both the public administration and by developers and cooperatives on private land) subject to a stipulated price per m2, whether it is the maximum price for sale, rent or other forms of access to housing. There are three different types of VPO (special, general or concerted), depending on the family income\".",
@@ -296,6 +317,7 @@
                },
                {
                   "name": "Social renting",
+                  "style": "small",
                   "year": 2020,
                   "category": "CMMM WALL",
                   "Definiton": "\"Term of general use but with a legal definition that establishes a price based on household income, and can be granted by both the public administration and a financial entity. It is aimed at people who can prove residential exclusion and are registered at what it is called the “emergency table”, some of the conditions of access are determined by the local government\".",
@@ -306,6 +328,7 @@
          },
          {
             "name": "Eviction",
+            "style": "medium",
             "year": 2020,
             "category": "SCHOLARLY",
             "Definiton": "\"the act of forcing somebody to leave a house or land, especially when you have the legal right to do so\"",
@@ -314,6 +337,7 @@
             "children": [
                {
                   "name": "Benevolent Evictions",
+                  "style": "small",
                   "year": 2019,
                   "category": "SCHOLARLY",
                   "Definiton": "\"[Benevolent eviction is a concept] to describe a new mode of dispossession, whereby expulsions from the urban core to the periphery are facilitated through the deployment of benevolence as a technology of eviction. ... The concept of benevolent eviction serves as a useful framework for understanding the new drivers and logics of dispossession in climate-vulnerable Southern cities subjected to reconstruction and reconfiguration both in the aftermath of disasters and in response to escalating risks. Benevolent eviction is an instantiation of ‘resiliency revanchism’, or ‘the discursive enrolment of resiliency toward revenge’ against the vulnerable yet undesirable other.\"",
@@ -324,6 +348,7 @@
          },
          {
             "name": "Touristification",
+            "style": "medium",
             "year": 2018,
             "category": "SCHOLARLY",
             "Definiton": "“[W]e understand touristification as a transformation of urban spaces into tourist areas that are produced by visitors and their practices and which can be approached on the three levels (...). On the first level, we approach the phenomenon of touristification as a visible change of the built environment or its functional use, and hence as a materialized object, for example, in the spread of souvenir shops or localized tourist services. On the second level, we address touristification as a non-visible, or hardly visible, change in the use of existing infrastructure or environmental settings, such as the on-going transformation of regular housing into Airbnb apartments. And on the third level, we look at touristification from a human-agency-based perspective with a focus on tourist practices and actions. (...) We acknowledge that the three levels are highly intertwined and contingent on each other. (...) On the ground of our reflections and observations, we suggest that touristification should not be regarded as a unidimensional, linear cause-and-effect model, but as a multi-dimensional, complex concept reflecting the interplay of heterogeneous actors and settings.”",
@@ -344,6 +369,7 @@
          },
          {
             "name": "Financialization of housing markets",
+            "style": "medium",
             "year": 2019,
             "category": "INSTITUTIONAL ",
             "Definiton": "“The definition we seek to work with comes from Aalbers (2017), inspired by Epstein (2005): “Financialization is the increasing dominance of financial actors, markets, practices, measurements and narratives, at various scales, resulting in a structural transformation of the economies, firms (including financial institutions), states and households.” While identifying the structural causes of housing crises, we should name and target the main actors of financialization, among them banks, real estate developers, investment companies, private equity funds, and others. Moreover, we should uncover how the states, transnational structures, and intergovernmental organizations are supporting their interests through legislation, policies, strategies, and programs that privatize, marketize and deregulate housing and are also the constitutive actors of financialization.”",
@@ -358,6 +384,7 @@
          },
          {
             "name": "Commons",
+            "style": "medium",
             "year": 2018,
             "category": "SCHOLARLY",
             "Definiton": "\"Ostrom and her colleagues often define commons as common pool resources, a specific type of good. The underlying classification is based on different degrees of excludability and subtractability. In the paper this is criticized for disregarding the importance of the social processes at hand. It is argued that instead of being a type of good, commons need to be conceptualized taking the relevant social dimensions into account. Commons are hence conceptualized as the social form of (tangible and/or intangible) matter that is determined by commoning.\"",
@@ -372,6 +399,7 @@
             "children": [
                {
                   "name": "Housing commons",
+                  "style": "small",
                   "year": 2018,
                   "category": "SCHOLARLY",
                   "Definiton": "\"... all housing, irrespective of tenure and ownership, constitutes an actually existing housing commons when we recognize its collective use-value as social infrastructure that benefits us all when everyone can access it. ... The circulation of the commons here takes place not through the invisible hand of the market, but through the very visible body of the housing commoners, the groups of activists and individuals who are resisting and creating.\"",
@@ -380,6 +408,7 @@
                },
                {
                   "name": "Common Good (Gemeinwohl)",
+                  "style": "small",
                   "year": 2018,
                   "category": "SCHOLARLY",
                   "Definiton": "\"The planning process has been the focus of protests against neighbourhood initiatives, including demands for consideration of the ‘common good’ (gemeinwohl)—i.e. more public spaces and social housing—in the rather functional and profit‐oriented masterplan, as well as meaningful participation in the planning process\"",
@@ -402,6 +431,7 @@
          },
          {
             "name": "Residential (housing) as Political",
+            "style": "medium",
             "year": 2016,
             "category": "SCHOLARLY",
             "Definiton": "\"The residential is political - which is to say that the shape of the housing system is always the outcome of struggles between different groups and classes. Housing necessarily raises questions about state action and the broader economic system.\"",
@@ -410,6 +440,7 @@
          },
          {
             "name": "Sustainable Development of Housing",
+            "style": "medium",
             "year": 2016,
             "category": "INSTITUTIONAL ",
             "Definiton": "\"Sustainabel development of housing is defined as the improvement of the housing conditions for citizens, as well as preservation and improvement of the value of the housing stock [both privately and publicly owned], along with improvement of energy efficiency, decrease in negative impact on the environemnt and rational use of resources, hence harmonization of economic and social development and environment protection whitin development of the housing sector.\"",
@@ -418,6 +449,7 @@
          },
          {
             "name": "Master Plan",
+            "style": "medium",
             "year": 2009,
             "category": "INSTITUTIONAL ",
             "Definiton": "\"General urban plan [Master plan] is adopted as the strategic development plan, with general element of the spatial development. It is adopted for the territory considered by the Law on Territorial Organisation of the Republic of Serbia as the town.\"",
@@ -437,6 +469,7 @@
     "children": [
        {
           "name": "Municipalism",
+          "style": "medium",
           "year": 2020,
           "category": "CMMM WALL",
           "Definiton": "\"Municipalism refers to a contemporary struggle to establish and institutionalize new local, community-based models of organisation, decision-making and resource-management, that nourishes diversity, radical equality and cooperation.\"",
@@ -475,6 +508,7 @@
           "children": [
              {
                 "name": "New Municipalism",
+                "style": "small",
                 "year": 2019,
                 "category": "INSTITUTIONAL ",
                 "Definiton": "\"In developing new models of organising and holding power, new municipalism is a conscious shift away from the hierarchical, competitive, homogenous patriarchal way of doing politics towards a horizontal, relational, everyday politics that empowers all people.\"",
@@ -506,6 +540,7 @@
              },
              {
                 "name": "Managed Municipalism",
+                "style": "small",
                 "year": 2020,
                 "category": "SCHOLARLY",
                 "Definiton": "\"Managed municipalism re-engineers the existing state apparatus for the democratisation of local economies. ... Managed municipalism attempts to manage and control the flow of capital through its borders, preventing it ‘leaking out’ by building more self-contained circuits of value through anchor institutional support of local co-ops via progressive procurement.\"",
@@ -514,6 +549,7 @@
              },
              {
                 "name": "Autonomist Municipalism",
+                "style": "small",
                 "year": 2020,
                 "category": "SCHOLARLY",
                 "Definiton": "\"[Autonomous municipalism] prefigures a ‘stateless’ confederation of democratically self-governing communes. ... Autonomist municipalism seeks autonomy from the commodity form through constructing more autonomous, self-sustaining de-commodified circuits of value rooted in social reproduction and commoning.\"",
@@ -522,6 +558,7 @@
              },
              {
                 "name": "Entrepreneurial Municipalism",
+                "style": "small",
                 "year": 2020,
                 "category": "SCHOLARLY",
                 "Definiton": "\"... what we call entrepreneurial municipalism involves urban authorities using their political, legal and financial powers to harness endogenous assets such as land and labour to build a more socially just and self-sustaining pathway to local economic development – one which reflects the interacting processes of reciprocity, redistribution and market exchange of a socially embedded local economy. ... we have argued that the local state is well-positioned to more proactively develop and better capture for redistribution the value created by the three classical factors of production, land, labour and capital.”",
@@ -530,6 +567,7 @@
              },
              {
                 "name": "Platform Municipalism",
+                "style": "small",
                 "year": 2020,
                 "category": "SCHOLARLY",
                 "Definiton": "\"Platform municipalism attempts to challenge the growing dominance of platform capitalism over urban everyday life (Srnicek, 2016) by innovating digital platform technologies to democratically coordinate alternative urban systems or working towards collective control over the platform and algorithmic technologies that increasingly organise production, distribution and consumption.\"",
@@ -540,6 +578,7 @@
        },
        {
           "name": "Democracy",
+          "style": "medium",
           "year": 1971,
           "category": "SCHOLARLY",
           "Definiton": "\"[Democracy is] a system of government in which the people of a country can vote to elect their representatives\"",
@@ -554,6 +593,7 @@
           "children": [
              {
                 "name": "Consensus Democracy",
+                "style": "small",
                 "year": 1998,
                 "category": "SCHOLARLY",
                 "Definiton": "\"Consensus democracy is a reasonable agreement between individuals and social groups who have understood that knowing what is possible and negotiating between partners are a way for each party to obtain the optimal share that the objective givens of the situation allow them to hope for and which is preferable to conflict. But for parties to opt for discussion rather than a fight, they must exist as parties … . What consensus thus presupposes is the disappearance of any gap between a party to a dispute and a part of society … . It is, in a word, the disappearance of politics.\"",
@@ -562,6 +602,7 @@
              },
              {
                 "name": "Postdemocracy",
+                "style": "small",
                 "year": 1998,
                 "category": "SCHOLARLY",
                 "Definiton": "\"Postdemocracy is the government practice and conceptual legitimation of a democracy after the demos, a democracy that has eliminated the appearance, miscount, and dispute of the people and is thereby reducible to the sole interplay of state mechanisms and combinations of social energies and interests …\"",
@@ -578,6 +619,7 @@
        },
        {
           "name": "The Political",
+          "style": "medium",
           "year": 2014,
           "category": "SCHOLARLY",
           "Definiton": "\"It is the work of the political that inaugurates and names the truth of the event and forges symbolisations, practices and contents, and that provides substance to the political sequence. It is not philosophy or (critical social) theory that founds or inaugurates the political. On the contrary, the political emerges through the process of political subjectivation, the process of appearance of those who disrupt the state of the situation in the name of “equality”, “the people”, the “common” and “the democratic”.\"",
@@ -586,6 +628,7 @@
           "children": [
              {
                 "name": "Post-politicisation",
+                "style": "small",
                 "year": 2014,
                 "category": "SCHOLARLY",
                 "Definiton": "\"Post-politicisation relies on both including all in a consensual pluralist order and radically excluding those who posit themselves outside the consensus. ... In other words, a Schmittian ultra-politics that lurks behind and underneath the consensual order and does not tolerate an outside – one that sutures the entire social space by the tyranny of the police (state) and squeezes out the political – pits those who “participate” in the instituted configurations of the consensual order against those who are placed outside, such as undocumented workers, political Islam, radical environmentalists, communists, (a variety of) insurgents, alter-globalists, or the otherwise marginalised or politically inexistent.\"",
@@ -594,6 +637,7 @@
              },
              {
                 "name": "Feminising Politics",
+                "style": "small",
                 "year": 2019,
                 "category": "INSTITUTIONAL ",
                 "Definiton": "\"Feminising politics is not simply about committing to gender equality in institutional and public participation but more fundamentally, it is about system change. New municipalist platforms seek to feminise the public sphere by emphasising collaboration, relationships, dialogue, and community.\"",
@@ -610,6 +654,7 @@
        },
        {
           "name": "Participation",
+          "style": "medium",
           "year": 2011,
           "category": "INSTITUTIONAL",
           "Definiton": "\"Participation goes back to the adjective \"particeps\", which in German means as much as \"involved\" or \"participating in something\".  In today's usage the meaning is much broader. ... In a widespread definition, participation comprises \"all activities that citizens undertake voluntarily with the aim of influencing decisions at the various levels of the political system\"(Kaase 1991).\"",
@@ -618,6 +663,7 @@
           "children": [
              {
                 "name": "Participatory Process (in urban planning)",
+                "style": "small",
                 "year": 2016,
                 "category": "SCHOLARLY",
                 "Definiton": "\"The participatory process is helping to strengthen connections between citizens, creating an awareness on mutual dependence and need for solidarity in order to collectively work on improving their everyday environment. Collaboration with citizens also reveals an opportunity for urban planners and architects and to reestablish their social influence.\"",
@@ -628,6 +674,7 @@
        },
        {
           "name": "Militant Research",
+          "style": "medium",
           "year": 2014,
           "category": "SCHOLARLY",
           "Definiton": "\"Militant research – as an orientation – is thus in many ways a rejection of the entire problematic of the activist/academic, or more accurately, it is a subjective orientation towards research in which the ‘academic’ component is irrelevant precisely because militant research does not take the university as a referent. In the ﬁrst instance, militant research is irrespective of the university and the attendant subject of the academic. Instead, all forms of militant research are concerned with ‘the capacity for struggles to read themselves and, consequently, to recapture and disseminate the advances and productions of other social practices’ (Colectivo Situaciones 2003) – militant research is thus the conscious and deliberate attempt to make movements move through a reﬂexive (dialectical, even?) critique of their own praxis. ... From a militant research orientation, the problematic is thus not so much navigating the duality of activism/academia, but to what extent one can conduct militant research within the university.\"",
@@ -648,6 +695,7 @@
           "children": [
              {
                 "name": "Militant Ethnography",
+                "style": "small",
                 "year": 2014,
                 "category": "SCHOLARLY",
                 "Definiton": "\"I understood militant ethnography – as a form of militant research – as the process of gradually identifying and becoming ﬁxated on a contradiction, inconsistency or paradox within an overtly politicised milieu, and then striving to understand and contribute to the collective surpassing of this paradox – a combination of thought and action orientated towards understanding and changing collective praxis, identifying and surpassing the limits of our existing selves.\"",
