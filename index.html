@@ -39,13 +39,15 @@
     <p>Search:</p>
     <div id="searchName" aria-label="hello"></div>
   </div>
-  <div id="definitions"></div>
+  <div id="definitions">
+    <div id="def" class ="welcome"> Welcome to the CMMM Glossary. This is the info text. It disappears after clicking the diagram. You can zoom in and out with your fingers. </br></br>CMMM is a practice-oriented research project that is designed to support existing civil society movements in their struggle for profound transformation towards more just societies and cities. It believes that real change requires reshuffling existing power relations, which is what many on-the-ground mobilisers are trying to do. While there are many tools being developed and employed, in this project we focus on the tool of Critical Mapping (CM) which we consider an ‘act of power’.</div>
+  </div>
   <div id="filters"> 
-    <div id="myBtnContainer">Filter by Source: 
-      <button class="btn-cmmm"> CMMM Wall</button>
-      <button class="btn-act" > Activists/Media</button>
-      <button class="btn-scho" > Scholarly</button>
-      <button class="btn-inst" > Institutional</button>
+    <div id="myBtnContainer">Filter Source by different definitions: 
+      <button id="btn1" class="btn btn-act" > Activists/Media</button>
+      <button id="btn2" class="btn btn-cmmm"> CMMM Wall</button>
+      <button id="btn3" class="btn btn-scho" > Scholarly</button>
+      <button id="btn4" class="btn btn-inst" > Institutional</button>
     </div>
   </div>
 
@@ -62,6 +64,59 @@
 
 
   <script>
+
+$(function () {
+    $("#btn1").on("click", function () {
+
+        $("#btn1").addClass("active");
+    });
+    $(document).on("click", function (e) {
+        if (e.target.id != "btn1" && !$(e.target).parents("#filters").length) {
+            $("#btn1").removeClass("active");
+        }
+    });
+});
+
+$(function () {
+    $("#btn2").on("click", function () {
+
+        $("#btn2").addClass("active");
+    });
+    $(document).on("click", function (e) {
+        if (e.target.id != "btn2" && !$(e.target).closest("#filters").length) {
+            $("#btn2").removeClass("active");
+        }
+    });
+});
+
+$(function () {
+    $("#btn3").on("click", function () {
+
+        $("#btn3").addClass("active");
+    });
+    $(document).on("click", function (e) {
+        if (e.target.id != "btn3" && !$(e.target).closest("#filters").length) {
+            $("#btn3").removeClass("active");
+        }
+    });
+});
+
+
+$(function () {
+    $("#btn4").on("click", function () {
+
+        $("#btn4").addClass("active");
+    });
+    $(document).on("click", function (e) {
+        if (e.target.id != "btn4" && !$(e.target).closest("#filters").length) {
+            $("#btn4").removeClass("active");
+        }
+    });
+});
+
+
+
+
     //SEARCH FUNCTIONALITY
     //===============================================
     function select2DataCollectName(d) {
@@ -190,25 +245,43 @@
     }
     //GRAPH ARCHITECTURE
     //===============================================
-    var width = 960,
-      height = 600,
+    var width = 1280,
+      height = 900,
       duration = 0,
       root;
 
     var force = d3.layout
       .force()
-      .linkDistance(15)
-      .charge(-800)
+      .linkDistance(30)
+      .charge(-900)
+      .size([640, 450])
       .gravity(0.1)
-      .size([width  + 220, height - 250])
       .on("tick", tick);
+
+      function zooming(d) {        
+  svg.attr("transform",
+      "translate(" + d3.event.translate + ")"+ " scale(" + d3.event.scale + ")");
+}
+
+var x = d3.scale.linear()
+    .domain([0, width])
+    .range([0, width]);
+
+var y = d3.scale.linear()
+    .domain([0, height])
+    .range([height, 0]);
+
+    var zoom = d3.behavior.zoom().translate([250,100]).scale(.5,.5);
+
 
     var svg = d3
       .select("#graph")
       .append("svg")
-      .attr("width", "100%")
-      .attr("height", "100%")
-
+      .attr("width", width)
+      .attr("height", height)
+      .call(zoom.on("zoom", zooming))
+        .append('g')
+        .attr("transform","translate(250,100)scale(.5,.5)");
       
 
     var link = svg.selectAll(".link"),
