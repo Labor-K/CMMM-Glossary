@@ -180,10 +180,10 @@ p{
 }
 
 
-.btn-cmmm{background-color: #F59C00; border: none;     font-family: "Barlow", sans-serif;}
-.btn-act{background-color: #009FE3; border: none;    font-family: "Barlow", sans-serif;}
-.btn-scho{background-color: #E84A42; border: none;    font-family: "Barlow", sans-serif;}
-.btn-inst {background-color: #95C11F; border: none;    font-family: "Barlow", sans-serif;}
+.btn-cmmm{background-color: #F59C00; border: none;     font-family: "Barlow", sans-serif; font-size: 15px;}
+.btn-act{background-color: #009FE3; border: none;    font-family: "Barlow", sans-serif;   font-size: 15px;}
+.btn-scho{background-color: #E84A42; border: none;    font-family: "Barlow", sans-serif;   font-size: 15px; }
+.btn-inst {background-color: #95C11F; border: none;    font-family: "Barlow", sans-serif;  font-size: 15px; }
 
 .active {
   opacity: 0.3;
