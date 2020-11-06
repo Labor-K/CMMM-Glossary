@@ -43,11 +43,13 @@
     <div id="def" class ="welcome"> Welcome to the CMMM Glossary. This is the info text. It disappears after clicking the diagram. You can zoom in and out with your fingers. </br></br>CMMM is a practice-oriented research project that is designed to support existing civil society movements in their struggle for profound transformation towards more just societies and cities. It believes that real change requires reshuffling existing power relations, which is what many on-the-ground mobilisers are trying to do. While there are many tools being developed and employed, in this project we focus on the tool of Critical Mapping (CM) which we consider an ‘act of power’.</div>
   </div>
   <div id="filters"> 
-    <div id="myBtnContainer">Filter Source by different definitions: 
-      <button id="btn1" class="btn btn-act" > Activists/Media</button>
-      <button id="btn2" class="btn btn-cmmm"> CMMM Wall</button>
-      <button id="btn3" class="btn btn-scho" > Scholarly</button>
-      <button id="btn4" class="btn btn-inst" > Institutional</button>
+    <div id="myBtnContainer">FILTER SOURCE BY DIFFERENT DEFINITIONS: 
+      <button id="btn1" class="btn btn-act" > ACTIVISTS/MEDIA</button>
+      <button id="btn2" class="btn btn-cmmm"> CMMM WALL</button>
+      <button id="btn3" class="btn btn-scho" > SCHOLARLY</button>
+      <button id="btn4" class="btn btn-inst" > INSTITUTIONAL</button>
+      <button id="btn4" class="btn btn-all" > SHOW ALL</button>
+
     </div>
   </div>
 
@@ -446,6 +448,7 @@ var y = d3.scale.linear()
           d3.select(".selected").classed("selected", false);
           d3.select(this).classed("selected", true);
           d3.selectAll("#def").remove();
+          d3.selectAll("#away").remove();
           d3.select("#definitions")
           .append("div")
           .attr("id", "def")
@@ -457,7 +460,6 @@ var y = d3.scale.linear()
           '<p><em>' + d.Reference +'<p><em>'
           );
 
-          
           d3.select("#definitions")
           .append("div")
           .attr("id", "def")
@@ -515,26 +517,64 @@ var y = d3.scale.linear()
       });
 
 
-            
 
 var button = d3.select(".btn-cmmm")
 button.on("click",function(d){
-  d3.selectAll(".CMMMWALL").remove();
-});
+  var checker = d3.select(".CMMMWALL").attr('id')
+  if (checker=="def"){
+  d3.selectAll(".CMMMWALL").attr("id","away");
+}
+ if (checker =="away"){
+  d3.selectAll(".CMMMWALL").attr("id","def");
+  d3.selectAll(".btn-cmmm").classed('active', false);
+}
+  });
 
 var buttona = d3.select(".btn-act")
 buttona.on("click",function(d){
-  d3.selectAll(".Activists").remove();
+  var checkerb = d3.select(".Activists").attr('id')
+
+  if (checkerb=="def"){
+  d3.selectAll(".Activists").attr("id","away");
+} 
+if (checkerb =="away"){
+  d3.selectAll(".Activists").attr("id","def");
+  d3.selectAll(".btn-act").classed('active', false);
+}
 });
 
 var buttonb = d3.select(".btn-scho")
 buttonb.on("click",function(d){
-  d3.selectAll(".SCHOLARLY").remove();
+  var checkerc = d3.select(".SCHOLARLY").attr('id')
+
+  if (checkerc=="def"){
+  d3.selectAll(".SCHOLARLY").attr("id","away");
+} 
+if (checkerc =="away"){
+  d3.selectAll(".SCHOLARLY").attr("id","def");
+  d3.selectAll(".btn-scho").classed('active', false);
+}
 });
 
 var buttonc = d3.select(".btn-inst")
 buttonc.on("click",function(d){
-  d3.selectAll(".INSTITUTIONAL").remove();
+  var checkerd = d3.select(".INSTITUTIONAL").attr('id')
+
+  if (checkerd=="def"){
+  d3.selectAll(".INSTITUTIONAL").attr("id","away");
+} 
+if (checkerd =="away"){
+  d3.selectAll(".INSTITUTIONAL").attr("id","def");
+  d3.selectAll(".btn-inst").classed('active', false);
+}
+});
+
+var buttond = d3.select(".btn-all")
+buttond.on("click",function(d){
+
+  d3.selectAll("#away").attr("id","def");
+  d3.selectAll(".btn").classed('active', false);
+
 });
 
       // Transition exiting nodes to the parent's new position.

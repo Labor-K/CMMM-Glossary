@@ -69,6 +69,7 @@ p{
     float: none;
     display: inline-block;
     border-right: 2px solid black;
+
   }
 #myBtnContainer{
   margin-left: 50px;
@@ -91,8 +92,9 @@ p{
   .SCHOLARLY,
   .ACTIVISTS\/MEDIA,
   .INSTITUTIONAL {
-    float: none;
-    display: inline-block;
+    float: none !important;
+    vertical-align: top !important;
+    display: inline-block !important;
     width: 400px;
     height: 40vh;
     background-color: white;
@@ -175,6 +177,9 @@ p{
 
 }
 
+#away {
+  display:none !important;
+}
 #year{
   font-weight: 200;
 }
@@ -184,11 +189,15 @@ p{
 .btn-act{background-color: #009FE3; border: none;    font-family: "Barlow", sans-serif;   font-size: 15px;}
 .btn-scho{background-color: #E84A42; border: none;    font-family: "Barlow", sans-serif;   font-size: 15px; }
 .btn-inst {background-color: #95C11F; border: none;    font-family: "Barlow", sans-serif;  font-size: 15px; }
+.btn-all {background-color:#d3d3d3; border: none; font-family: "Barlow", sans-serif;  font-size: 15px;}
 
 .active {
   opacity: 0.3;
 }
 
+.re {
+  opacity: 1;
+}
 
 
 
