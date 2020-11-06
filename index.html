@@ -452,7 +452,7 @@ var y = d3.scale.linear()
           d3.select("#definitions")
           .append("div")
           .attr("id", "def")
-          .attr("class", d.category.replace(/\s+/g, ""))
+          .attr("class", d.category.replace(/\s+/g, "").replace(/\//g, "-"))
           .html('<h2>' + d.name + ", " + '<span id="year">' + d.year + '</span>' + '</h2>' + 
           '<span id='+d.category.replace(/\s+/g, "")+"sp"+'>' + d.category + '</span>' +
           '<p>' + d.Definiton +'</p>' +
@@ -463,7 +463,7 @@ var y = d3.scale.linear()
           d3.select("#definitions")
           .append("div")
           .attr("id", "def")
-          .attr("class", d.category_a.replace(/\s+/g, ""))
+          .attr("class", d.category_a.replace(/\s+/g, "").replace(/\//g, "-"))
           .html('<h2>' + d.name_a + ", " + '<span id="year">' + d.year_a + '</span>' + '</h2>' + 
           '<span id='+d.category_a.replace(/\s+/g, "")+"sp"+'>' + d.category_a + '</span>' +
           '<p>' + d.Definiton_a +'</p>' +
@@ -474,7 +474,7 @@ var y = d3.scale.linear()
           d3.select("#definitions")
           .append("div")
           .attr("id", "def")
-          .attr("class", d.category_b.replace(/\s+/g, ""))
+          .attr("class", d.category_b.replace(/\s+/g, "").replace(/\//g, "-"))
           .html('<h2>' + d.name_b + ", " + '<span id="year">' + d.year_b + '</span>' + '</h2>' + 
           '<span id='+d.category_b.replace(/\s+/g, "")+"sp"+'>' + d.category_b + '</span>' +
           '<p>' + d.Definiton_a +'</p>' +
@@ -485,7 +485,7 @@ var y = d3.scale.linear()
           d3.select("#definitions")
           .append("div")
           .attr("id", "def")
-          .attr("class", d.category_c.replace(/\s+/g, ""))
+          .attr("class", d.category_c.replace(/\s+/g, "").replace(/\//g, "-"))
           .html('<h2>' + d.name_c + ", " + '<span id="year">' + d.year_c + '</span>' + '</h2>' + 
           '<span id='+d.category_c.replace(/\s+/g, "")+"sp"+'>' + d.category_c + '</span>' +
           '<p>' + d.Definiton_c +'</p>' +
@@ -495,7 +495,7 @@ var y = d3.scale.linear()
           d3.select("#definitions")
           .append("div")
           .attr("id", "def")
-          .attr("class", d.category_d.replace(/\s+/g, ""))
+          .attr("class", d.category_d.replace(/\s+/g, "").replace(/\//g, "-"))
           .html('<h2>' + d.name_d + ", " + '<span id="year">' + d.year_d + '</span>' + '</h2>' + 
           '<span id='+d.category_d.replace(/\s+/g, "")+"sp"+'>' + d.category_d + '</span>' +
           '<p>' + d.Definiton_d +'</p>' +
@@ -506,7 +506,7 @@ var y = d3.scale.linear()
           d3.select("#definitions")
           .append("div")
           .attr("id", "def")
-          .attr("class", d.category_f.replace(/\s+/g, ""))
+          .attr("class", d.category_f.replace(/\s+/g, "").replace(/\//g, "-"))
           .html('<h2>' + d.name_f + ", " + '<span id="year">' + d.year_f + '</span>' + '</h2>' + 
           '<span id='+d.category_f.replace(/\s+/g, "")+"sp"+'>' + d.category_f + '</span>' +
           '<p>' + d.Definiton_f +'</p>' +
@@ -532,13 +532,12 @@ button.on("click",function(d){
 
 var buttona = d3.select(".btn-act")
 buttona.on("click",function(d){
-  var checkerb = d3.select(".Activists").attr('id')
-
+  var checkerb = d3.select(".ACTIVISTS-MEDIA").attr('id')
   if (checkerb=="def"){
-  d3.selectAll(".Activists").attr("id","away");
+  d3.selectAll(".ACTIVISTS-MEDIA").attr("id","away");
 } 
 if (checkerb =="away"){
-  d3.selectAll(".Activists").attr("id","def");
+  d3.selectAll(".ACTIVISTS-MEDIA").attr("id","def");
   d3.selectAll(".btn-act").classed('active', false);
 }
 });
