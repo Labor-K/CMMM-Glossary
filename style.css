@@ -1,12 +1,16 @@
 body {
-    font-family: "Barlow", sans-serif;
-    display: inline-block;
+  font-family: "Barlow", sans-serif !important;
+      display: inline-block;
+    margin: none;
+    margin-left: 15px;
   }
 
 
   h1{
-
+    font-weight: 700;
+font-size: 1.5em;
     margin:0;
+    display: inline-block;
   }
   .node {
     cursor: pointer;
@@ -59,21 +63,49 @@ p{
     font: 15px;
     width:200px;
   }
+#logo{
+  display: inline-block;
+translate: 100px 200px;
+vertical-align: top;
+margin-top: -7px;
+}
+
+
 
   #block_container {
     position: fixed;
     width: 20%;
+    z-index:999999;
   }
 
   #def {
     float: none;
     display: inline-block;
     border-right: 2px solid black;
-
+  }
+#leiste{
+  position:fixed;
+  background-color: white;
+  width: 100%;
+  height: 10px;
+}
+#footer-logos{
+  
+}
+  .card{
+    z-index: 999999999999;
+    background-color: #f8f8f8;
+    width: 60vw;  
+    margin-left: 40vw;
+    text-align: left;
+    height: 100vh;
+    border:none;
   }
 #myBtnContainer{
-  margin-left: 50px;
-}
+text-align: right;
+margin-top: 8.5px;
+margin-right: 3%;}
+
   .welcome {
     border-right: 0px solid black !important;
     font-size: 20px !important;
@@ -95,14 +127,15 @@ p{
     float: none !important;
     vertical-align: top !important;
     display: inline-block !important;
-    width: 400px;
-    height: 40vh;
+    width: 325px;
+    height: 100vh;
     background-color: white;
     margin-right: 0.25em;
+    margin-top: 5px;
     display: none;
     overflow-y: auto;
     white-space: pre-wrap;
-    margin-left:50px;
+    margin-left: 15px;
   }
 
 
@@ -113,6 +146,7 @@ p{
   font-weight: 700;
   font-style: uppercase;
 }
+h2{ font-weight: 700;}
 
 #medium{
   font-size: 14px;
@@ -141,32 +175,32 @@ p{
 }
 
   #definitions {
-    width: 100vw;
-    height: 40vh;
+    width: 60vw;
+    height: 100vh;
+    margin-left: 40vw;
     background-color: white;
     position: fixed;
-    bottom: 0;
+    top: 6vh;
     overflow: auto;
     white-space: nowrap;
+    border-left: 2px solid black;
 
   }
 
 
   #graph {
     position: fixed;
-    height: 60%;
+    height: 100%;
     background-color: white;
-    margin-top: 200px;
-    width: 98%;
-    text-align:center;
-    margin:auto;
-  }
+    width: 40%;
+    text-align:left;
+    display: block;}
 
   #filters {
     position: fixed;
-    height: 4vh;
+    top: 0.25%;
+    height: 5vh;
     width: 100vw;
-    bottom: 40vh;
     background-color:#FAFAFA;
   }
 
@@ -185,11 +219,12 @@ p{
 }
 
 
-.btn-cmmm{background-color: #F59C00; border: none;     font-family: "Barlow", sans-serif; font-size: 15px;}
-.btn-act{background-color: #009FE3; border: none;    font-family: "Barlow", sans-serif;   font-size: 15px;}
-.btn-scho{background-color: #E84A42; border: none;    font-family: "Barlow", sans-serif;   font-size: 15px; }
-.btn-inst {background-color: #95C11F; border: none;    font-family: "Barlow", sans-serif;  font-size: 15px; }
-.btn-all {background-color:#d3d3d3; border: none; font-family: "Barlow", sans-serif;  font-size: 15px;}
+.btn-cmmm{background-color: #F59C00; border: none;     font-family: "Barlow", sans-serif; font-size: 13px;}
+.btn-act{background-color: #009FE3; border: none;    font-family: "Barlow", sans-serif;   font-size: 13px;}
+.btn-scho{background-color: #E84A42; border: none;    font-family: "Barlow", sans-serif;   font-size: 13px; }
+.btn-inst {background-color: #95C11F; border: none;    font-family: "Barlow", sans-serif;  font-size: 13px; }
+.btn-all {background-color:#d3d3d3; border: none; font-family: "Barlow", sans-serif;  font-size: 13px;}
+.btn-info{color: black; margin-left: 20px;background-color: white; border: 1px solid black; border-radius: 400px; font-family: "Barlow", sans-serif;  font-size: 13px;}
 
 .active {
   opacity: 0.3;
